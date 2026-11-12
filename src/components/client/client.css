@@ -1,0 +1,260 @@
+#client {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.clientWord {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+.clientWord h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+}
+
+.test {
+    font-size: 1.2rem;
+    width: 7rem;
+    padding: 4px;
+    font-weight: 500;
+    color: #5c64cf;
+    margin-left: 13px;
+    border: 2px solid #5c64cf;
+    transform: rotate(0.95turn);
+    transform-origin: left;
+}
+
+.clientFlex {
+    display: flex;
+    height: 90%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.clientFlex img {
+    height: 20vh;
+    margin-top: 2rem;
+    object-fit: cover;
+    width: 20vh;
+}
+.clientFlex .img2{
+    height: 15vh;
+}
+
+.clientFlex .one,
+.clientFlex .two {
+    width: 23vw;
+    height: 50vh;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clientFlex .one:hover,
+.clientFlex .two:hover {
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.clientFlex p {
+    color: rgb(103, 101, 101);
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.clientFlex #name {
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin-top: auto;
+}
+
+
+/* Tablet Responsive */
+@media screen and (max-width: 1024px) {
+
+    #client {
+        height: auto;
+        min-height: 90vh;
+        padding-bottom: 3rem;
+        overflow: visible;
+    }
+
+    .clientWord {
+        margin: 1rem 0 0 2rem;
+        padding: 2rem 0 0 1rem;
+    }
+
+    .clientWord h1 {
+        font-size: 2.5rem;
+    }
+
+    .clientFlex {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        height: auto;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 40%;
+        height: auto;
+        min-height: 420px;
+        padding: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .clientFlex img {
+        width: 120px;
+        height: 120px;
+        margin-top: 1.5rem;
+    }
+
+    .clientFlex .img2 {
+        height: 120px;
+    }
+
+    .clientFlex p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+        line-height: 1.5;
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+    #client {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding-bottom: 2rem;
+        overflow: visible;
+    }
+
+    .clientWord {
+        margin: 1rem 0 0 1rem;
+        padding: 2rem 0 0 1rem;
+    }
+
+    .clientWord h1 {
+        font-size: 2rem;
+    }
+
+    .test {
+        font-size: 0.9rem;
+        width: 6rem;
+    }
+
+    .clientFlex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        height: auto;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 90%;
+        max-width: 450px;
+        height: auto;
+        min-height: 380px;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .clientFlex img {
+        width: 110px;
+        height: 110px;
+        margin-top: 1rem;
+    }
+
+    .clientFlex .img2 {
+        height: 110px;
+    }
+
+    .clientFlex p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding: 0 0.5rem;
+    }
+
+    .clientFlex #name {
+        margin-top: auto;
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Responsive */
+@media screen and (max-width: 480px) {
+
+    #client {
+        padding-bottom: 1.5rem;
+    }
+
+    .clientWord {
+        margin-left: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    .clientWord h1 {
+        font-size: 1.7rem;
+    }
+
+    .test {
+        font-size: 0.8rem;
+        width: 5.5rem;
+        padding: 3px;
+    }
+
+    .clientFlex {
+        gap: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .clientFlex .one,
+    .clientFlex .two {
+        width: 95%;
+        min-height: 350px;
+        padding: 0.8rem;
+    }
+
+    .clientFlex img {
+        width: 90px;
+        height: 90px;
+        margin-top: 1rem;
+    }
+
+    .clientFlex .img2 {
+        height: 90px;
+    }
+
+    .clientFlex p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        padding: 0 0.3rem;
+    }
+
+    .clientFlex #name {
+        font-size: 0.9rem;
+    }
+}

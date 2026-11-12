@@ -1,0 +1,18 @@
+/* Global fix for horizontal scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Ensure all sections don't cause horizontal scroll */
+section, div, nav, header, footer {
+    max-width: 100%;
+    overflow-x: hidden;
+}
